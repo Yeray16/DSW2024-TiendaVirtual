@@ -1,0 +1,17 @@
+{
+    "name": "daw2/dsw2024-tienda-virtual",
+    "description": "Práctica Tema 3",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Daw2\\Dsw2024TiendaVirtual\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yeray Navarro",
+            "email": "yeraynp16@gmail.com"
+        }
+    ],
+    "require": {}
+}
