@@ -4,14 +4,16 @@ class Product {
   public string $namefab;
   public string $name;
   public float $basePrice;
-  public float $weight = 4250;
-  public float $volume = 3300;
+  public float $weight;
+  public float $volume;
 
-  public function __construct($namefab="Vodafone", $name="Yeray", $basePrice= 89.99)
+  public function __construct($namefab, $name, $basePrice, $weight, $volume)
   {
-    $this->$namefab = $namefab;
-    $this->$name = $name;
-    $this->$basePrice = $basePrice;
+    $this->namefab = $namefab;
+    $this->name = $name;
+    $this->basePrice = $basePrice;
+    $this->weight = $weight;
+    $this->volume = $volume;
   }
 
   public function calculateCost() {
@@ -20,9 +22,5 @@ class Product {
       $sendCost += floor(($this->volume - 1) / 1000);
     }
     return round($sendCost, 2);
-  }
-  public function __toString()
-  {
-    return "Esto es el toString";
   }
 }
