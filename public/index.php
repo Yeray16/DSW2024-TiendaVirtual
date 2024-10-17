@@ -2,7 +2,7 @@
 require '../vendor/autoload.php';
 use Daw2\Dsw2024TiendaVirtual\Product;
 
-$prueba = new Product();
+$prueba = new Product('Braun', 'Cyclone 23', 89.99, 4250, 3300);
 ?>
 <!DOCTYPE html>
 <html lang="en">
